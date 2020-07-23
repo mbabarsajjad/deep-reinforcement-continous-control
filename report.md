@@ -15,7 +15,7 @@ LR_CRITIC = 1e-3        # learning rate of the critic
 ~~~
 
 ##  Plot of Rewards
-![Scores](average_score.png)  
+![Scores](average_score.PNG)  
 The Average score of 30 was achieved at the 70th episode. Afterwards, it remained stable and above the mark till the end of execution at 100th episode. 
 
 ##  Ideas for Future Work  
