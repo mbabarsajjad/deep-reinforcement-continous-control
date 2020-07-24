@@ -51,7 +51,7 @@ class Agent():
         # Replay memory
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, random_seed)
     
-    def step(self, states, actions, rewards, next_states, dones):
+    def step(self, states, actions, rewards, next_states, dones, update):
         """Save experience in replay memory, and use random sample from buffer to learn."""
         # Save experience / reward
         
@@ -59,10 +59,11 @@ class Agent():
             self.memory.add(state, action, reward, next_state, done)
 
         # Learn, if enough samples are available in memory
-        if len(self.memory) > BATCH_SIZE:
-            experiences = self.memory.sample()
-            self.learn(experiences, GAMMA)
-
+        if len(self.memory) > BATCH_SIZE and update == True:
+            for _ in range(10):
+                experiences = self.memory.sample()
+                self.learn(experiences, GAMMA)
+                
     def act(self, state, add_noise=True):
         """Returns actions for given state as per current policy."""
         state = torch.from_numpy(state).float().to(device)
