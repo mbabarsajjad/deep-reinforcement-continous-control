@@ -15,8 +15,8 @@ LR_CRITIC = 1e-3        # learning rate of the critic
 ~~~
 
 ##  Plot of Rewards
-![Scores](average_score.PNG)  
-The Average score of 30 was achieved at the 70th episode. Afterwards, it remained stable and above the mark till the end of execution at 100th episode. 
+![Scores](score.PNG)  
+The Average score of 30 was achieved at episode: 101. Afterwards, it remained stable and above the mark for the next 100 episodes. 
 
 ##  Ideas for Future Work  
 - Hyper parameters and different network architures can be explored further to improve the agent's learning speed.
