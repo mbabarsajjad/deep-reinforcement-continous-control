@@ -1,8 +1,12 @@
 #  Project Report
 
-## Implementation and Learning Algorithm  
-Deep Deterministic Policy Gradients (DDPG) algorithm is used in this project as it is highly suitable for solving the continous control problems.  
-The neural network contains two hidden layers of size 400 and 300 respectively for both critic and actor networks. ReLU activation function is used for the hidden layers and tanh function is used for the final output layer.  
+## Learning Algorithm  
+Deep Deterministic Policy Gradients (DDPG) algorithm is used in this project as it is highly suitable for solving the continous control problems. Also, as mentioned [here](https://keras.io/examples/rl/ddpg_pendulum/#:~:text=Deep%20Deterministic%20Policy%20Gradient%20(DDPG)%20is%20a%20model%2Dfree,algorithm%20for%20learning%20continous%20actions.&text=It%20uses%20Experience%20Replay%20and,operate%20over%20continuous%20action%20spaces.), DDPG combines the intelligence from both DPG (Deterministic Policy Gradient) and DQN (Deep Q-Network). 
+  
+## Implementation
+The neural network used in the project contains two hidden layers of size 400 and 300 respectively for both critic and actor networks. ReLU activation function is used for the hidden layers and tanh function is used for the final output layer.  
+Gradient Clipping was later added to the update of Critic network to further improve the performance.  
+In addition, the code was modified to update the networks less aggresively -> 10 times after every 20 timesteps.
 
 Following hyperparameters are used for learning:  
 ~~~
