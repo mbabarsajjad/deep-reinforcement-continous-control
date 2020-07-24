@@ -75,6 +75,7 @@ class Agent():
         return np.clip(action, -1, 1)
 
     def reset(self):
+        """Reset the parameters by using the noise function"""
         self.noise.reset()
 
     def learn(self, experiences, gamma):
