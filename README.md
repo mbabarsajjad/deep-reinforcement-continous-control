@@ -1,7 +1,7 @@
 # Continous Control Project for Double-Jointed Robotic Arm
 Project 2 of Udacity's Deep Reinforcement Learning nanodegree program
 
-![](ezgif.com-video-to-gif(1).gif)
+![](ezgif.com-video-to-gif (1).gif)
 
 
 ## Project Details
