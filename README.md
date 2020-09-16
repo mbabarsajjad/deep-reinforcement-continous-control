@@ -14,7 +14,7 @@ In this project, agents are trained to continously control the double-jointed ro
 
 ## Getting Started
 Following libraries are required:
-Python 3.x , Jupyter Notebook, NumPy, matplotlib, PyTorch, UnityEnvironment
+Python 3.x , Jupyter Notebook, NumPy, matplotlib, PyTorch, UnityEnvironment.
 
 Following are the steps for getting started with the project:  
 
